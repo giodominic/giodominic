@@ -23,17 +23,28 @@
       /* Add additional styling as needed */
     }
 
+    .nav-item a {
+            color: #686868; /* Default color */
+            text-decoration: none;
+            transition: color 0.3s ease; /* Transition effect */
+        }
+
+        .nav-item a:hover,
+        .nav-item a:hover p {
+            color: tomato; /* Color when hovering */
+        }
+
     </style>
 </head>
 
 <!-- As a link -->
 <div class="nav"> 
-  <ul class="nav text-end" style="padding: 10px">
+  <ul class="nav bg-light" style="padding: 10px">
     <li class="nav-item">
-      <a class="nav-link text-secondary" href="index.html"><p style="margin: 0; color: #686868;">Home</p></a>
+      <a class="nav-link text-secondary" href="index.html"><p style="margin: 0;">Home</p></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-secondary" href=""><p style="margin: 0; color:tomato" class="fw-bold">Contact</p></a>
+      <a class="nav-link text-secondary" href=""><p style="margin: 0; color:tomato" class="fw-bold">Resume</p></a>
     </li>
   </ul>
 </div>
