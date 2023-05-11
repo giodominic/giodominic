@@ -83,34 +83,101 @@
       /* Add additional styling as needed */
     }
 
+    .text-secondary {
+    max-width: 500px; /* Adjust the desired width */
+    margin-left: auto;
+    margin-right: auto;
+}
 
-     /* image and text */
-     @media only screen and (max-width: 390px) {
-        /* Adjust container padding */
-        .container {
-            padding-top: 50px;
-        }
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .text-secondary {
+        max-width: 100%;
+    }
+}
 
-        /* Adjust image size */
-        #dp {
-            max-width: 150px;
-            height: auto;
-        }
 
-        /* Center align text */
-        .content-text {
-            text-align: center;
-        }
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    #dp {
+        width: 150px;
+        margin-right: 10px;
+    }
 
-        /* Compress text */
-        .text-secondary {
-            max-width: 150px;
-            font-size: 14px;
-        }
-    }     
-    /* image and text */
+    .content-text {
+        text-align: center;
+    }
 
+    .text-secondary {
+        max-width: 100%;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #dp {
+        width: 120px;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    .content-text {
+        text-align: center;
+    }
+
+    .text-secondary {
+        font-size: 12px;
+    }
+}
+
+
+
+
+/* Responsive adjustments TABLE IMAGES */
+.container {
+    padding-top: 50px;
+}
+
+table {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.image-with-shadow {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding-top: 30px;
+    }
+
+    table {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        padding-top: 20px;
+    }
+
+    table {
+        max-width: 80%;
+    }
     
+    td {
+        display: block;
+        text-align: center;
+    }
+}
+
 
 
 </style>
@@ -131,21 +198,17 @@
 
 
  
-<div class="container" style="padding-top: 100px">
-
+  <div class="container" style="padding-top: 100px">
     <div class="content">
         <img src="image/gio.png" id="dp" alt="">
         <div class="separator"></div>
         <div class="content-text">
-            <h3 style="margin-top: 0; color: tomato;" class="fw-bold fs-3">Hi, I'm Gio</h3>
-            <p style="width:500px" class="text-secondary">I’m an aspiring UI/UX Designer who brings inclusive, minimal &
-                future-oriented user
-                experience to users in need.</p>
+            <h3 class="fw-bold fs-3">Hi, I'm Gio</h3>
+            <p class="text-secondary">I’m an aspiring UI/UX Designer who brings inclusive, minimal &amp; future-oriented user experience to users in need.</p>
         </div>
-        <br>
     </div>
-
 </div>
+
 
 
 <div class="container pt-5" id="gallery">
