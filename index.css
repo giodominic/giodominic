@@ -154,7 +154,7 @@
 
 
     .content-div {
-        width: 80%;
+        width: 50%;
         justify-content: center;
         display: flex;
         /* ROW RESPONSIVE */
@@ -186,9 +186,10 @@
     }
 
     .table-div {
-        width: 100%;
-        margin-top: 30px;
+        width: 90%;
+        margin: 30px auto 0;
     }
+
 
     .table-div a {
         text-decoration: none;
@@ -315,7 +316,7 @@
     }
 
     .table-div {
-        width: 80%;
+        width: 75%;
         margin: 60px auto 0;
         display: flex;
         /* pang pantay ng content sa loob ng div */
@@ -331,13 +332,14 @@
 
     .table-div td {
         width: 50%;
-        padding: 10px;
+        padding: 5px;
     }
 
     .table-div p {
         width: 100%;
         text-decoration: none;
         color: gray;
+        margin: 0 auto 0;
     }
 
 
