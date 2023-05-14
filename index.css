@@ -3,108 +3,421 @@
     padding: 0;
 }
 
-.navbar {
-    width: 100%;
-    justify-content: center;
-    text-decoration: none;
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.5);
+/* SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
+@media screen and (max-width: 600px) {
+    .navbar {
+        width: 100%;
+        justify-content: center;
+        text-decoration: none;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .menu {
+        margin: 0;
+        color: gray;
+        font-size: 12px;
+        text-decoration: none !important;
+    }
+
+    .nav-link a {
+        text-decoration: none;
+    }
+
+
+    .content-div {
+        width: 90%;
+        justify-content: center;
+        display: flex;
+        /* ROW RESPONSIVE */
+        align-items: center;
+        /* NAKA-ALIGN YONG COLUMNS -> HORIZONTALLY */
+        margin: 30px auto 0;
+    }
+
+    .me {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .separator {
+        border-left: 3px solid #000000;
+        height: 90px;
+        margin: 0 10px;
+    }
+
+    .hi-im-gio {
+        color: black;
+    }
+
+    .content-text {
+        width: 100%;
+        color: gray;
+    }
+
+    .table-div {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .table-div a {
+        text-decoration: none;
+    }
+
+    .table-div p {
+        width: 90%;
+        /* parehas width ng image1, image2, image3, image4 */
+        color: gray;
+        font-size: 14px;
+        margin: 5px auto 20px;
+        /* (yong laman) */
+    }
+
+    table {
+        width: 100%;
+        display: flex;
+        /* ROW RESPONSIVE */
+        justify-content: center;
+        /* COLUMN CENTER */
+    }
+
+    table td {
+        width: 100%;
+        display: flex;
+        /* ROW RESPONSIVE */
+        justify-content: center;
+        /* COLUMN CENTER */
+    }
+
+    table img {
+        width: 100%;
+        margin-bottom: 5px;
+        display: flex;
+        /* ROW RESPONSIVE */
+        justify-content: center;
+        /* COLUMN CENTER */
+    }
+
+   .image {
+        width: 90%;
+        /* parehas width sa <p> */
+        margin: auto;
+        /* (yong laman) */
+    }
+
+    .contact-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 30px;
+    }
+
+    .icons {
+        margin: 0 30px;
+    }
 }
 
-.nav-link {
-    color: gray;
-    font-size: 14px;
-    height: 35px;
+
+
+
+
+
+
+
+/* MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        width: 100%;
+        justify-content: center;
+        text-decoration: none;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .menu {
+        margin: 0 20px;
+        color: gray;
+        font-size: 14px;
+        text-decoration: none !important;
+    }
+
+    .nav-link a {
+        text-decoration: none;
+    }
+
+    .container {
+        width: 70%;
+        margin: 40px auto 40px;
+    }
+
+
+    .content-div {
+        width: 80%;
+        justify-content: center;
+        display: flex;
+        /* ROW RESPONSIVE */
+        align-items: center;
+        /* NAKA-ALIGN YONG COLUMNS -> HORIZONTALLY */
+        margin: 30px auto 0;
+    }
+
+    .me {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .separator {
+        border-left: 3px solid #000000;
+        height: 90px;
+        margin: 0 20px;
+    }
+
+    .hi-im-gio {
+        color: black;
+    }
+
+    .content-text {
+        width: 100%;
+        color: gray;
+    }
+
+    .table-div {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .table-div a {
+        text-decoration: none;
+    }
+
+    .table-div p {
+        width: 90%;
+        /* parehas width ng image1, image2, image3, image4 */
+        color: gray;
+        font-size: 14px;
+        margin: 5px auto 20px;
+        /* (yong laman) */
+    }
+
+    table {
+        width: 100%;
+        display: flex;
+        /* ROW RESPONSIVE */
+        justify-content: center;
+        /* COLUMN CENTER */
+    }
+
+    table td {
+        width: 100%;
+        display: flex;
+        /* ROW RESPONSIVE */
+        justify-content: center;
+        /* COLUMN CENTER */
+    }
+
+    table img {
+        width: 100%;
+        margin-bottom: 5px;
+        display: flex;
+        /* ROW RESPONSIVE */
+        justify-content: center;
+        /* COLUMN CENTER */
+    }
+
+  .image {
+        width: 90%;
+        /* parehas width sa <p> */
+        margin: auto;
+        /* (yong laman) */
+    }
+
+    .contact-div {
+        width: 100%;
+        display: flex;
+        /* ROW RESPONSIVE */
+        justify-content: center;
+        margin: 10px 0 30px;
+    }
+
+    .icons {
+        margin: 0 30px;
+    }
 }
 
 
-.content-div {
-    width: 90%;
-    display: flex; /* ROW RESPONSIVE */
-    align-items: center;
-    justify-content: center;
-    margin: 30px auto 0;
+
+
+
+
+
+
+
+/* LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE */
+@media screen and (min-width: 1025px) {
+    .navbar {
+        width: 100%;
+        justify-content: end;
+        text-decoration: none;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .menu {
+        margin: 0 20px;
+        color: gray;
+        font-size: 14px;
+        text-decoration: none !important;
+    }
+
+    .nav-link a {
+        text-decoration: none;
+    }
+
+    .nav-link:hover .menu {
+        color: black;
+      }
+
+
+    .content-div {
+        width: 80%;
+        justify-content: center;
+        display: flex;
+        /* ROW RESPONSIVE */
+        align-items: center;
+        /* NAKA-ALIGN YONG COLUMNS -> HORIZONTALLY */
+        margin: 60px auto 0;
+    }
+
+    .me {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .separator {
+        border-left: 3px solid #000000;
+        height: 90px;
+        margin: 0 30px;
+    }
+
+    .hi-im-gio {
+        color: black;
+    }
+
+    .content-text {
+        width: 30%;
+        color: gray;
+    }
+
+    .table-div {
+        width: 80%;
+        margin: 60px auto 0;
+        display: flex;
+        /* pang pantay ng content sa loob ng div */
+        justify-content: center;
+        /* pang pantay ng content sa loob ng div */
+        align-items: center;
+        /* pang pantay ng content sa loob ng div */
+    }
+
+    .table-div a {
+        text-decoration: none;
+    }
+
+    .table-div td {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .table-div p {
+        width: 100%;
+        text-decoration: none;
+        color: gray;
+    }
+
+
+    .image {
+        width: 100%;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .image:hover {
+        filter: brightness(90%);
+    }
+
+
+    .contact-div {
+        width: 100%;
+        display: flex;
+        /* ROW RESPONSIVE */
+        justify-content: center;
+        margin: 30px 0 30px;
+    }
+
+    .icons {
+        margin: 0 30px;
+    }
 }
 
-.me {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
+
+
+
+
+
+
+
+
+/* CONTACT ICON HOVER */
+.icons a:hover .bi, 
+.icons a:hover svg {
+    fill: #404040;
+    /* Change the fill color of the icons when hovering */
 }
 
-.separator {
-    border-left: 3px solid #000000;
-    height: 90px;
-    margin: 0 10px;
+.icons a:hover #myIcon {
+    color: #404040;
+    /* Change the color of the specific icon with ID "myIcon" when hovering */
 }
 
-.hi-im-gio {
-    color: black;
+.icons :hover .bi-telephone-fill,
+.icons :hover svg {
+    fill: #404040;
+    /* Change the fill color of the icon when hovering */
 }
 
-.content-text {
-    width: 100%;
-    color: gray;
+
+
+
+
+
+
+
+
+/* SCROLL UP */
+#scrollUpButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
 }
 
-.table-div {
-    width: 100%;
-    margin-top: 30px;
+#scrollUpButton:hover svg path {
+    fill: #404040;
 }
 
-.table-div a {
-    text-decoration: none;
+#scrollUpButton i {
+    display: block;
 }
 
-.table-div p {
-    color: gray;
-    font-size: 14px;
+#scrollUpButton.visible {
+    display: block;
 }
-
-table {
-    width: 100%;
-    display: flex; /* ROW RESPONSIVE */
-    justify-content: center; /* COLUMN CENTER */
-}
-
-table td {
-    width: 100%;
-    display: flex; /* ROW RESPONSIVE */
-    justify-content: center; /* COLUMN CENTER */
-}
-
-table img {
-    width: 100%;
-    margin-bottom: 5px; 
-    display: flex; /* ROW RESPONSIVE */
-    justify-content: center; /* COLUMN CENTER */
-}
-
-.image1,
-.image2,
-.image3,
-.image4 {
-    width: 300px;
-}
-
-.contact-div {
-    width:100%;
-    display: flex; /* ROW RESPONSIVE */
-    justify-content: center;
-    margin: 30px 0 30px; 
-}
-
-.icons {
-    margin: 0 30px; 
-  }
-  
-  
-
-
-
-
-
-
-
-  /* */

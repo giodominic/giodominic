@@ -13,202 +13,13 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
     </script>
 
+    <link rel="stylesheet" href="about.css">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <title>Home Page</title>
 </head>
 
-
-<style>
-    #dp {
-        width: 200px;
-        height: 200px;
-        margin-right: 15px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-
-    .separator {
-        border-left: 3px solid #000000;
-        height: 90px;
-        margin-left: 10px;
-    }
-
-    .content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-top: 50px;
-    }
-
-    .content-text {
-        text-align: left;
-        margin-left: 20px;
-        width: 500px;
-    }
-
-    .navbar {
-        justify-content: end;
-        backdrop-filter: blur(5px);
-        /* Apply a blur effect to the background */
-        background-color: rgba(255, 255, 255, 0.5);
-        /* Adjust the background color and opacity */
-        width: 100%;
-    }
-
-    .navlinks {
-        color: #686868;
-    }
-
-    .navlinks:hover {
-        color: #404040;
-
-    }
-
-    #image1,
-    #image2,
-    #image3,
-    #image4 {
-        width: 500px;
-        margin: 5px;
-    }
-
-    table {
-        width: 100%;
-        max-width: 1050px;
-        margin: 0 auto;
-        margin-top: 65px;
-        /* Center the table horizontally */
-    }
-
-    .casestudy:hover {
-        filter: brightness(90%);
-    }
-
-
-
-    /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL  */
-    /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL  */
-    /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL  */
-    @media (max-width: 600px) {
-        .navbar {
-            justify-content: end;
-        }
-
-        #dp {
-            width: 100px;
-            height: 100px;
-        }
-
-        .separator {
-            border-left: 3px solid #000000;
-            height: 90px;
-            margin-right: 10px;
-        }
-
-        .content {
-          margin-top: 20px;
-        }
-
-        .content-text {
-            width: 100%;
-            margin-left: 0;
-        }
-
-        table {
-            max-width: 100%;
-            margin-top: 20px;
-            display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the images horizontally */
-        }
-
-        #image1,
-        #image2,
-        #image3,
-        #image4 {
-            width: 100%;
-            margin: 5px 0;
-            display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the images horizontally */
-        }
-
-        table td {
-            display: block;
-            width: 100%;
-            box-sizing: border-box;
-            display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the images horizontally */
-        }
-
-        table img {
-            width: 100%;
-            margin-bottom: 5px;
-            display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the images horizontally */
-        }
-    }
-
-
-    /* LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE  */
-    /* LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE  */
-    /* LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE  */
-    @media (max-width: 1024px)  {
-        .navbar {
-            justify-content: end;
-        }
-
-        #dp {
-            width: 100px;
-            height: 100px;
-        }
-
-        .separator {
-            border-left: 3px solid #000000;
-            height: 90px;
-            margin-right: 10px;
-        }
-
-        .content {
-          margin-top: 20px;
-        }
-
-        .content-text {
-            width: 100%;
-            margin-left: 0;
-        }
-
-        table {
-            max-width: 100%;
-            margin-top: 20px;
-            margin-left: auto; /* Center the table horizontally */
-            margin-right: auto; /* Center the table horizontally */
-        }
-
-        #image1,
-        #image2,
-        #image3,
-        #image4 {
-            width: 100%;
-            margin: 5px 0;
-        }
-
-        table td {
-            display: block;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        table img {
-            width: 100%;
-            margin-bottom: 5px;
-        }
-    }
-</style>
 
 
 <body style="width: 100%">
@@ -218,12 +29,12 @@
     <div class="navbar sticky-top">
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link navlinks" href="index.html">
+                <a class="nav-link navlinks" href="index.php">
                     <p style="margin: 0; color: #404040; font-size: 14px" class="fw-medium">WORKS</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link navlinks" href="about.html">
+                <a class="nav-link navlinks" href="about.php">
                     <p style="margin: 0; font-size: 14px;" class="fw-light">ABOUT</p>
                 </a>
             </li>
@@ -254,13 +65,13 @@
         <table>
             <tr>
                 <td>
-                    <a href="1.html" style="text-decoration: none;">
+                    <a href="1.php" style="text-decoration: none;">
                         <img src="image/image1.png" class="casestudy" id="image1">
                         <p style="font-size: 14px; color: #686868;">&#9989 &nbsp; Productivity App</p>
                     </a>
                 </td>
                 <td>
-                    <a href="2.html" style="text-decoration: none;">
+                    <a href="2.php" style="text-decoration: none;">
                         <img src="image/image2.png" class="casestudy" id="image2">
                         <p style="font-size: 14px; color: #686868;">&#128172 &nbsp; Talk-talk Mobile App</p>
                     </a>
