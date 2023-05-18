@@ -1,0 +1,225 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 600px) {}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {} */
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1025px) {
+    .section {
+        height: 100vh; /* Set each section to the full viewport height */
+      }
+      
+      #section1 {
+        background-color: white; /* Example styling for section 1 */
+        background-image: url('image/bg.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow-x: hidden;
+      }
+      
+      #section2 {
+        background-color: #e1e1e1; /* Example styling for section 2 */
+      }
+      
+      #section3 {
+        background-color: #f3f3f3; /* Example styling for section 3 */
+      }
+      
+      
+      
+    /* END OF SECTION CSS END OF SECTION CSS END OF SECTION CSS END OF SECTION CSS END OF SECTION CSS END OF SECTION CSS  */
+
+
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 70%;
+        margin: 30px auto;
+        height: 80px;
+        background-color: white;
+    }
+
+    .navbar img {
+        height: 2%;
+        width: 5%;
+        height: 100%; /* Set the height to 100% to maintain aspect ratio */
+        flex-shrink: 0; /* Prevent the image from shrinking */
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: black;
+        padding: 10px 0;
+        position: relative;
+        /* background-color: yellow; */
+    }
+
+    .navbar ul li:not(:last-child) {
+        margin-right: 50px;
+        /* Adjust the value to increase or decrease the space */
+    }
+
+    .navbar ul li a::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        /* Set left to 50% */
+        transform: translateX(-50%);
+        /* Add this line to center the line */
+        top: -10px;
+        height: 3px;
+        width: 80px;
+        background-color: transparent;
+        transition: background-color 0.3s ease;
+    }
+
+    .navbar ul li a:hover::before {
+        background-color: black;
+        /* Adjust the color as needed */
+    }
+
+    .fullname {
+        display: flex;
+        justify-content: center;
+        /* Center horizontally */
+
+    }
+
+    .fullname p {
+        font-size: 45px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-weight: bold;
+        margin: 40px auto 0;
+        /* background-color: beige; */
+    }
+
+    .fullname p::before {
+        content: "\2013\2013\2013"; 
+        /* Unicode for em dash character */
+        margin-right: 20px;
+        /* Adjust spacing as needed */
+        font-weight: bold;
+        /* Optional: Make the hyphen bold */
+        color: tomato;
+        
+    }
+
+    .myinfo {
+        display: flex;
+        justify-content: center;
+        /* Center horizontally */
+        width: 40%;
+        margin: 0 auto 0;
+        
+        /* background-color: beige; */
+    }
+
+    .myinfo p {
+        width: 40%;
+        font-size: 12px;
+        text-align: center;
+        line-height: 30px;
+        /* background-color: beige; */
+    }
+
+
+    .contact-div {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: 40px auto 0;
+        /* background-color: beige; */
+        padding: 0;
+    }
+
+    .icons {
+        margin: 0 20px;
+    }
+
+    /* CONTACT ICON HOVER */
+    .icons a:hover .bi,
+    .icons a:hover svg {
+        fill: tomato;
+        /* Change the fill color of the icons when hovering */
+    }
+
+    .icons a:hover #myIcon {
+        color: tomato;
+        /* Change the color of the specific icon with ID "myIcon" when hovering */
+    }
+
+    .icons :hover .bi-telephone-fill,
+    .icons :hover svg {
+        fill: tomato;
+        /* Change the fill color of the icon when hovering */
+    }
+
+    .scroll-up-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none; /* Hide the button by default */
+        padding: 10px;
+        background-color: transparent; /* Set the background color to transparent */
+        border: none;
+        border-radius: 4px;
+        font-size: 0; /* Remove the font-size to prevent extra spacing */
+        cursor: pointer;
+      }
+      
+      .scroll-up-button.show {
+        display: block; /* Show the button when scrolling down */
+      }
+      
+      .scroll-up-button i,
+      .scroll-up-button svg {
+        fill: black; /* Set the icon color to the current text color */
+      }
+
+      .scroll-up-button i,
+      .scroll-up-button svg:hover {
+        fill: tomato; /* Set the icon color to the current text color */
+      }
+      
+    
+    
+    }      

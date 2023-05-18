@@ -1,395 +1,548 @@
-* {
+/* @media screen and (max-width: 600px) {} */
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .section {
+    height: 50vh;
+  }
+
+  #section1 {
+    background-color: white;
+    /* Example styling for section 1 */
+    /* background-image: url('image/bg.webp'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+
+    flex-wrap: wrap;
+    /* Add flex-wrap property to allow wrapping of content */
+    align-items: center;
+    justify-content: center;
+  }
+
+  #section2 {
+    background-color: #f3f3f3;
+    /* Example styling for section 2 */
+    display: flex;
+    flex-wrap: wrap;
+    /* Add flex-wrap property to allow wrapping of content */
+    align-items: center;
+    justify-content: center;
+  }
+
+  #section3 {
+    background-color: white;
+    /* Example styling for section 3 */
+    display: flex;
+    flex-wrap: wrap;
+    /* Add flex-wrap property to allow wrapping of content */
+    align-items: center;
+    justify-content: center;
+  }
+
+  #section4 {
+    background-color: #f3f3f3;
+    /* Example styling for section 3 */
+    display: flex;
+    flex-wrap: wrap;
+    /* Add flex-wrap property to allow wrapping of content */
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+
+
+
+
+  /* 1ST SECTION  */
+  .navbar {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    height: 50px;
+    /* background-color: beige; */
+  }
+
+  .navbar img {
+    height: 2%;
+    width: 7%;
+    height: 100%;
+    /* Set the height to 100% to maintain aspect ratio */
+    flex-shrink: 0;
+    /* Prevent the image from shrinking */
+  }
+
+  .navbar ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-/* SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
-@media screen and (max-width: 600px) {
-    .navbar {
-        width: 100%;
-        justify-content: center;
-        text-decoration: none;
-        backdrop-filter: blur(5px);
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-
-    .menu {
-        margin: 0;
-        color: gray;
-        font-size: 12px;
-        text-decoration: none !important;
-    }
-
-    .nav-link a {
-        text-decoration: none;
-    }
-
-
-    .content-div {
-        width: 90%;
-        justify-content: center;
-        display: flex;
-        /* ROW RESPONSIVE */
-        align-items: center;
-        /* NAKA-ALIGN YONG COLUMNS -> HORIZONTALLY */
-        margin: 30px auto 0;
-    }
-
-    .me {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-
-    .separator {
-        border-left: 3px solid #000000;
-        height: 90px;
-        margin: 0 10px;
-    }
-
-    .hi-im-gio {
-        color: black;
-    }
-
-    .content-text {
-        width: 100%;
-        color: gray;
-    }
-
-    .table-div {
-        width: 100%;
-        margin-top: 30px;
-    }
-
-    .table-div a {
-        text-decoration: none;
-    }
-
-    .table-div p {
-        width: 90%;
-        /* parehas width ng image1, image2, image3, image4 */
-        color: gray;
-        font-size: 14px;
-        margin: 5px auto 20px;
-        /* (yong laman) */
-    }
-
-    table {
-        width: 100%;
-        display: flex;
-        /* ROW RESPONSIVE */
-        justify-content: center;
-        /* COLUMN CENTER */
-    }
-
-    table td {
-        width: 100%;
-        display: flex;
-        /* ROW RESPONSIVE */
-        justify-content: center;
-        /* COLUMN CENTER */
-    }
-
-    table img {
-        width: 100%;
-        margin-bottom: 5px;
-        display: flex;
-        /* ROW RESPONSIVE */
-        justify-content: center;
-        /* COLUMN CENTER */
-    }
-
-   .image {
-        width: 90%;
-        /* parehas width sa <p> */
-        margin: auto;
-        /* (yong laman) */
-    }
-
-    .contact-div {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin: 10px 0 30px;
-    }
-
-    .icons {
-        margin: 0 30px;
-    }
-}
-
-
-
-
-
-
-
-
-/* MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    .navbar {
-        width: 100%;
-        justify-content: center;
-        text-decoration: none;
-        backdrop-filter: blur(5px);
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-
-    .menu {
-        margin: 0 20px;
-        color: gray;
-        font-size: 14px;
-        text-decoration: none !important;
-    }
-
-    .nav-link a {
-        text-decoration: none;
-    }
-
-    .container {
-        width: 70%;
-        margin: 40px auto 40px;
-    }
-
-
-    .content-div {
-        width: 50%;
-        justify-content: center;
-        display: flex;
-        /* ROW RESPONSIVE */
-        align-items: center;
-        /* NAKA-ALIGN YONG COLUMNS -> HORIZONTALLY */
-        margin: 30px auto 0;
-    }
-
-    .me {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-
-    .separator {
-        border-left: 3px solid #000000;
-        height: 90px;
-        margin: 0 20px;
-    }
-
-    .hi-im-gio {
-        color: black;
-    }
-
-    .content-text {
-        width: 100%;
-        color: gray;
-    }
-
-    .table-div {
-        width: 90%;
-        margin: 30px auto 0;
-    }
-
-
-    .table-div a {
-        text-decoration: none;
-    }
-
-    .table-div p {
-        width: 90%;
-        /* parehas width ng image1, image2, image3, image4 */
-        color: gray;
-        font-size: 14px;
-        margin: 5px auto 20px;
-        /* (yong laman) */
-    }
-
-    table {
-        width: 100%;
-        display: flex;
-        /* ROW RESPONSIVE */
-        justify-content: center;
-        /* COLUMN CENTER */
-    }
-
-    table td {
-        width: 100%;
-        display: flex;
-        /* ROW RESPONSIVE */
-        justify-content: center;
-        /* COLUMN CENTER */
-    }
-
-    table img {
-        width: 100%;
-        margin-bottom: 5px;
-        display: flex;
-        /* ROW RESPONSIVE */
-        justify-content: center;
-        /* COLUMN CENTER */
-    }
-
-  .image {
-        width: 90%;
-        /* parehas width sa <p> */
-        margin: auto;
-        /* (yong laman) */
-    }
-
-    .contact-div {
-        width: 100%;
-        display: flex;
-        /* ROW RESPONSIVE */
-        justify-content: center;
-        margin: 10px 0 30px;
-    }
-
-    .icons {
-        margin: 0 30px;
-    }
-}
-
-
-
-
-
-
-
-
-
-/* LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE LARGE */
-@media screen and (min-width: 1025px) {
-    .navbar {
-        width: 100%;
-        justify-content: end;
-        text-decoration: none;
-        backdrop-filter: blur(5px);
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-
-    .menu {
-        margin: 0 20px;
-        color: gray;
-        font-size: 14px;
-        text-decoration: none !important;
-    }
-
-    .nav-link a {
-        text-decoration: none;
-    }
-
-    .nav-link:hover .menu {
-        color: black;
-      }
-
-
-    .content-div {
-        width: 80%;
-        justify-content: center;
-        display: flex;
-        /* ROW RESPONSIVE */
-        align-items: center;
-        /* NAKA-ALIGN YONG COLUMNS -> HORIZONTALLY */
-        margin: 60px auto 0;
-    }
-
-    .me {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-
-    .separator {
-        border-left: 3px solid #000000;
-        height: 90px;
-        margin: 0 30px;
-    }
-
-    .hi-im-gio {
-        color: black;
-    }
-
-    .content-text {
-        width: 30%;
-        color: gray;
-    }
-
-    .table-div {
-        width: 75%;
-        margin: 60px auto 0;
-        display: flex;
-        /* pang pantay ng content sa loob ng div */
-        justify-content: center;
-        /* pang pantay ng content sa loob ng div */
-        align-items: center;
-        /* pang pantay ng content sa loob ng div */
-    }
-
-    .table-div a {
-        text-decoration: none;
-    }
-
-    .table-div td {
-        width: 50%;
-        padding: 5px;
-    }
-
-    .table-div p {
-        width: 100%;
-        text-decoration: none;
-        color: gray;
-        margin: 0 auto 0;
-    }
-
-
-    .image {
-        width: 100%;
-        transition: transform 0.3s, opacity 0.3s;
-    }
-
-    .image:hover {
-        filter: brightness(90%);
-    }
-
-
-    .contact-div {
-        width: 100%;
-        display: flex;
-        /* ROW RESPONSIVE */
-        justify-content: center;
-        margin: 30px 0 30px;
-    }
-
-    .icons {
-        margin: 0 30px;
-    }
-}
-
-
-
-
-
-
-
-
-
-/* CONTACT ICON HOVER */
-.icons a:hover .bi, 
-.icons a:hover svg {
-    fill: #404040;
+  }
+
+  .navbar ul li {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+    position: relative;
+    /* background-color: yellow; */
+  }
+
+  .navbar ul li:not(:last-child) {
+    margin-right: 50px;
+    /* Adjust the value to increase or decrease the space */
+  }
+
+  .navbar ul li a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    /* Set left to 50% */
+    transform: translateX(-50%);
+    /* Add this line to center the line */
+    top: -10px;
+    height: 3px;
+    width: 80px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar ul li a:hover::before {
+    background-color: black;
+    /* Adjust the color as needed */
+  }
+
+  .sec1content {
+    width: 100%;
+    /* background-color: #357AF6; */
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .fullname {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* background-color: green; */
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .fullname p {
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    /* background-color: gray; */
+  }
+
+  .fullname p::before {
+    width: 100%;
+    content: "\2013\2013\2013";
+    margin-right: 20px;
+    font-weight: bold;
+    color: tomato;
+  }
+
+  .myinfo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* background-color: beige; */
+  }
+
+  .myinfo p {
+    max-width: 220px;
+    font-size: 12px;
+    line-height: 25px;
+    /* background-color: pink; */
+  }
+
+
+  .contact-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    /* background-color: pink; */
+    padding: 0;
+  }
+
+  .icons {
+    margin: 0 20px;
+  }
+
+  /* CONTACT ICON HOVER */
+  .icons a:hover .bi,
+  .icons a:hover svg {
+    fill: tomato;
     /* Change the fill color of the icons when hovering */
-}
+  }
 
-.icons a:hover #myIcon {
-    color: #404040;
+  .icons a:hover #myIcon {
+    color: tomato;
     /* Change the color of the specific icon with ID "myIcon" when hovering */
-}
+  }
 
-.icons :hover .bi-telephone-fill,
-.icons :hover svg {
-    fill: #404040;
+  .icons :hover .bi-telephone-fill,
+  .icons :hover svg {
+    fill: tomato;
     /* Change the fill color of the icon when hovering */
+  }
+
+
+
+
+
+
+
+
+  /* 2ND SECTION */
+  .appcontainer2 {
+    background-color: #f3f3f3;
+    width: 80%;
+    display: flex;
+  }
+
+  .image-container2 {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    /* background-color: green; */
+  }
+
+  .image-container2:hover .zoom-image {
+    transform: scale(1.1);
+    /* Adjust the scale value as per your preference */
+  }
+
+
+  .text-container2 {
+    width: 100%;
+    flex: 0.5;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .text-container2 p {
+    font-size: 20px;
+    font-weight: normal;
+    width: 100%;
+    letter-spacing: 1px;
+    /* background-color: white; */
+  }
+
+  .text-container2 p:hover {
+    color: #EAAF02;
+  }
+
+  .text-container2 a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s ease;
+    /* background-color: green; */
+  }
+
+  .text-container2 a:hover {
+    text-decoration: none;
+    color: #EAAF02;
+  }
+
+  .text-container2 span {
+    width: 100%;
+    font-size: 12px;
+    margin: 0;
+    color: #EAAF02;
+    letter-spacing: 1px;
+  }
+
+  .text-container2:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+
+  .text-container2 p {
+    display: inline-block;
+    /* vertical-align: middle; */
+    /* background-color: aqua; */
+  }
+
+
+  .hyphen2 {
+    width: 50px;
+    height: 8px;
+    background-color: #EAAF02;
+    margin: 10px;
+    align-self: center;
+    border-radius: 30px;
+    opacity: .7;
+  }
+
+  .zoom-image {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center center;
+    /* Set the transform origin to the center */
+  }
+
+  .zoom-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+
+
+
+
+
+
+
+  /* 3RD SECTION  */
+  .appcontainer3 {
+    background-color: white;
+    width: 80%;
+    display: flex;
+  }
+
+  .image-container3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    /* background-color: green; */
+  }
+
+  .image-container3:hover .zoom-image {
+    transform: scale(1.1);
+    /* Adjust the scale value as per your preference */
+  }
+
+
+  .text-container3 {
+    width: 100%;
+    flex: 0.5;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .text-container3 p {
+    font-size: 20px;
+    font-weight: normal;
+    width: 100%;
+    letter-spacing: 1px;
+    /* background-color: white; */
+  }
+
+  .text-container3 p:hover {
+    color: #FDAFE3;
+  }
+
+  .text-container3 a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s ease;
+  }
+
+  .text-container3 a:hover {
+    text-decoration: none;
+    color: #FDAFE3;
+  }
+
+  .text-container3 span {
+    font-size: 14px;
+    width: 50%;
+    margin: 0;
+    color: #FDAFE3;
+    letter-spacing: 2px;
+  }
+
+  .text-container3:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+
+  .text-container3 p {
+    display: inline-block;
+    /* vertical-align: middle; */
+  }
+
+
+  .hyphen3 {
+    width: 50px;
+    height: 8px;
+    background-color: #FDAFE3;
+    margin: 10px;
+    align-self: center;
+    border-radius: 30px;
+    opacity: .7;
+  }
+
+  .zoom-image {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center center;
+    /* Set the transform origin to the center */
+  }
+
+  .zoom-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+
+
+
+
+
+
+
+  /* 4TH SECTION  */
+  .appcontainer4 {
+    background-color: #f3f3f3;
+    width: 80%;
+    display: flex;
+  }
+
+  .image-container4 {
+    flex: 1;
+    /* background-color: black; */
+    overflow: hidden;
+    /* Add overflow property to hide any overflowed content */
+    border-radius: 10px;
+  }
+
+  .image-container4:hover .zoom-image {
+    transform: scale(1.1);
+    /* Adjust the scale value as per your preference */
+  }
+
+
+  .text-container4 {
+    width: 100%;
+    flex: 0.5;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .text-container4 p {
+    font-size: 20px;
+    font-weight: normal;
+    width: 100%;
+    letter-spacing: 1px;
+    /* background-color: white; */
+  }
+
+  .text-container4 p:hover {
+    color: #357AF6;
+  }
+
+  .text-container4 a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s ease;
+  }
+
+  .text-container4 a:hover {
+    text-decoration: none;
+    color: #357AF6;
+  }
+
+  .text-container4 span {
+    font-size: 14px;
+    width: 50%;
+    margin: 0;
+    color: #357AF6;
+    letter-spacing: 2px;
+  }
+
+  .text-container4:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+
+  .text-container4 p {
+    display: inline-block;
+    /* vertical-align: middle; */
+  }
+
+
+  .hyphen4 {
+    width: 50px;
+    height: 8px;
+    background-color: #357AF6;
+    margin: 10px;
+    align-self: center;
+    border-radius: 30px;
+    opacity: .7;
+  }
+
+  .zoom-image {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center center;
+    /* Set the transform origin to the center */
+  }
+
+  .zoom-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
 }
 
 
@@ -400,26 +553,579 @@
 
 
 
-/* SCROLL UP */
-#scrollUpButton {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+
+
+
+@media screen and (min-width: 1025px) {
+  .section {
+    height: 100vh;
+    /* Set each section to the full viewport height */
+  }
+
+  #section1 {
+    background-color: white;
+    /* Example styling for section 1 */
+    background-image: url('image/bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+
+  #section2 {
+    background-color: #f3f3f3;
+    /* Example styling for section 2 */
+    display: flex;
+    flex-wrap: wrap;
+    /* Add flex-wrap property to allow wrapping of content */
+    align-items: center;
+    justify-content: center;
+  }
+
+  #section3 {
+    background-color: white;
+    /* Example styling for section 3 */
+    display: flex;
+    flex-wrap: wrap;
+    /* Add flex-wrap property to allow wrapping of content */
+    align-items: center;
+    justify-content: center;
+  }
+
+  #section4 {
+    background-color: #f3f3f3;
+    /* Example styling for section 3 */
+    display: flex;
+    flex-wrap: wrap;
+    /* Add flex-wrap property to allow wrapping of content */
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+
+
+
+
+  /* 1ST SECTION  */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
+    margin: 30px auto;
+    height: 120px;
+    background-color: white;
+  }
+
+  .navbar img {
+    flex-shrink: 0;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar ul li {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+    position: relative;
+    /* background-color: yellow; */
+  }
+
+  .navbar ul li:not(:last-child) {
+    margin-right: 50px;
+    /* Adjust the value to increase or decrease the space */
+  }
+
+  .navbar ul li a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    /* Set left to 50% */
+    transform: translateX(-50%);
+    /* Add this line to center the line */
+    top: -10px;
+    height: 3px;
+    width: 80px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar ul li a:hover::before {
+    background-color: black;
+    /* Adjust the color as needed */
+  }
+
+  .fullname {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+
+  }
+
+  .fullname p {
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: bold;
+    /* margin: 40px auto 0; */
+    /* background-color: beige; */
+  }
+
+  .fullname p::before {
+    content: "\2013\2013\2013";
+    margin-right: 20px;
+    font-weight: bold;
+    color: tomato;
+  }
+
+  .myinfo {
+    max-width: 190px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* background-color: beige; */
+    margin: 0 auto;
+  }
+
+  .myinfo p {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    /* background-color: beige; */
+  }
+
+
+  .contact-div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 40px auto 0;
+    /* background-color: beige; */
+    padding: 0;
+  }
+
+  .icons {
+    margin: 0 20px;
+  }
+
+  /* CONTACT ICON HOVER */
+  .icons a:hover .bi,
+  .icons a:hover svg {
+    fill: tomato;
+    /* Change the fill color of the icons when hovering */
+  }
+
+  .icons a:hover #myIcon {
+    color: tomato;
+    /* Change the color of the specific icon with ID "myIcon" when hovering */
+  }
+
+  .icons :hover .bi-telephone-fill,
+  .icons :hover svg {
+    fill: tomato;
+    /* Change the fill color of the icon when hovering */
+  }
+
+
+
+
+
+
+
+
+  /* 2ND SECTION */
+  .appcontainer2 {
+    background-color: #f3f3f3;
+    width: 80%;
+    display: flex;
+  }
+
+  .image-container2 {
+    flex: 1;
+    /* background-color: black; */
+    overflow: hidden;
+    /* Add overflow property to hide any overflowed content */
+    border-radius: 10px;
+  }
+
+  .image-container2:hover .zoom-image {
+    transform: scale(1.1);
+    /* Adjust the scale value as per your preference */
+  }
+
+
+  .text-container2 {
+    flex: 0.5;
+    /* background-color: yellowgreen; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .text-container2 p {
+    font-size: 28px;
+    font-weight: normal;
+    width: 90%;
+    margin: 30px 5px;
+    letter-spacing: 2px;
+    /* background-color: white; */
+  }
+
+  .text-container2 p:hover {
+    color: #EAAF02;
+  }
+
+  .text-container2 a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s ease;
+  }
+
+  .text-container2 a:hover {
+    text-decoration: none;
+    color: #EAAF02;
+  }
+
+  .text-container2 span {
+    font-size: 14px;
+    width: 50%;
+    margin: 0;
+    color: #EAAF02;
+    letter-spacing: 2px;
+  }
+
+  .text-container2:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+
+  .text-container2 p {
+    display: inline-block;
+    /* vertical-align: middle; */
+  }
+
+
+  .hyphen2 {
+    width: 100px;
+    /* Adjust the width of the hyphen */
+    height: 8px;
+    /* Adjust the height of the hyphen */
+    background-color: #EAAF02;
+    /* Adjust the color of the hyphen */
+    margin: 0 20px 0 0;
+    /* Center the hyphen horizontally */
+    align-self: center;
+    /* Center the hyphen vertically within the text-container */
+    border-radius: 30px;
+    opacity: .7;
+  }
+
+  .zoom-image {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center center;
+    /* Set the transform origin to the center */
+  }
+
+  .zoom-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+
+
+
+
+
+
+
+  /* 3RD SECTION  */
+  .appcontainer3 {
+    background-color: white;
+    width: 80%;
+    display: flex;
+  }
+
+  .image-container3 {
+    flex: 1;
+    /* background-color: black; */
+    overflow: hidden;
+    /* Add overflow property to hide any overflowed content */
+    border-radius: 10px;
+  }
+
+  .image-container3:hover .zoom-image {
+    transform: scale(1.1);
+    /* Adjust the scale value as per your preference */
+  }
+
+
+  .text-container3 {
+    flex: 0.5;
+    /* background-color: yellowgreen; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .text-container3 p {
+    font-size: 28px;
+    font-weight: normal;
+    width: 90%;
+    margin: 30px 5px;
+    letter-spacing: 2px;
+    /* background-color: white; */
+  }
+
+  .text-container3 p:hover {
+    color: #FDAFE3;
+  }
+
+  .text-container3 a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s ease;
+  }
+
+  .text-container3 a:hover {
+    text-decoration: none;
+    color: #FDAFE3;
+  }
+
+  .text-container3 span {
+    font-size: 14px;
+    width: 50%;
+    margin: 0;
+    color: #FDAFE3;
+    letter-spacing: 2px;
+  }
+
+  .text-container3:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+
+  .text-container3 p {
+    display: inline-block;
+    /* vertical-align: middle; */
+  }
+
+
+  .hyphen3 {
+    width: 100px;
+    /* Adjust the width of the hyphen */
+    height: 8px;
+    /* Adjust the height of the hyphen */
+    background-color: #FDAFE3;
+    /* Adjust the color of the hyphen */
+    margin: 0 0 0 20px;
+    /* Center the hyphen horizontally */
+    align-self: center;
+    /* Center the hyphen vertically within the text-container */
+    border-radius: 30px;
+    opacity: .7;
+  }
+
+  .zoom-image {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center center;
+    /* Set the transform origin to the center */
+  }
+
+  .zoom-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+
+
+
+
+
+
+
+  /* 4TH SECTION  */
+  .appcontainer4 {
+    background-color: #f3f3f3;
+    width: 80%;
+    display: flex;
+  }
+
+  .image-container4 {
+    flex: 1;
+    /* background-color: black; */
+    overflow: hidden;
+    /* Add overflow property to hide any overflowed content */
+    border-radius: 10px;
+  }
+
+  .image-container4:hover .zoom-image {
+    transform: scale(1.1);
+    /* Adjust the scale value as per your preference */
+  }
+
+
+  .text-container4 {
+    flex: 0.5;
+    /* background-color: yellowgreen; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .text-container4 p {
+    font-size: 28px;
+    font-weight: normal;
+    width: 90%;
+    margin: 30px 5px;
+    letter-spacing: 2px;
+    /* background-color: white; */
+  }
+
+  .text-container4 p:hover {
+    color: #357AF6;
+  }
+
+  .text-container4 a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s ease;
+  }
+
+  .text-container4 a:hover {
+    text-decoration: none;
+    color: #357AF6;
+  }
+
+  .text-container4 span {
+    font-size: 14px;
+    width: 50%;
+    margin: 0;
+    color: #357AF6;
+    letter-spacing: 2px;
+  }
+
+  .text-container4:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+
+  .text-container4 p {
+    display: inline-block;
+    /* vertical-align: middle; */
+  }
+
+
+  .hyphen4 {
+    width: 100px;
+    /* Adjust the width of the hyphen */
+    height: 8px;
+    /* Adjust the height of the hyphen */
+    background-color: #357AF6;
+    /* Adjust the color of the hyphen */
+    margin: 0 20px 0 0;
+    /* Center the hyphen horizontally */
+    align-self: center;
+    /* Center the hyphen vertically within the text-container */
+    border-radius: 30px;
+    opacity: .7;
+  }
+
+  .zoom-image {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center center;
+    /* Set the transform origin to the center */
+  }
+
+  .zoom-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
 }
 
-#scrollUpButton:hover svg path {
-    fill: #404040;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BACK TO TOP BACK TO TOP BACK TO TOP BACK TO TOP BACK TO TOP BACK TO TOP BACK TO TOP BACK TO TOP BACK TO TOP BACK TO TOP BACK TO TOP  */
+.scroll-up-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  font-size: 0;
+  cursor: pointer;
 }
 
-#scrollUpButton i {
-    display: block;
+.scroll-up-button.show {
+  display: block;
 }
 
-#scrollUpButton.visible {
-    display: block;
+.scroll-up-button i,
+.scroll-up-button svg {
+  fill: black;
+}
+
+.scroll-up-button i,
+.scroll-up-button svg:hover {
+  fill: tomato;
+}
+
+/* Additional CSS for smooth scrolling on Safari */
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
