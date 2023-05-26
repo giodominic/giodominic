@@ -280,27 +280,6 @@ a:hover {
       /* background-color: aliceblue; */
   }
 
-  .checkbtn {
-    display: block;
-  }
-  
-  .checkbtn {
-    font-size: 30px;
-    color: gray;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-
-  .checkbtn:hover {
-    color: black;
-  }
-
-  #check {
-    display: none;
-  }
 
 
 

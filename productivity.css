@@ -18,15 +18,31 @@
     text-decoration: none; 
 }
 
+
 .design {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     width: 52%;
-    font-size: 80px;
+    color: white;
+    font-size: 5rem;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0 auto;
+    margin: 60px auto;
+    line-height: 5rem;
+}
+
+.design2 {
+    /* background-color: aliceblue; */
+    color: white;
+    width: 52%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px auto;
+    line-height: 2rem;
 }
 
