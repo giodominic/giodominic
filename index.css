@@ -202,6 +202,10 @@ a:hover {
       top: 80px;
       left: -100%;
       text-align: center;
+      /* justify-content: center;
+      align-items: center;
+      text-align: center; */
+      padding: 40px;
       transition: all .5s;
 
 
