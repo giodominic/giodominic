@@ -18,6 +18,7 @@
     <style>
         @media (max-width: 858px) {
 
+
             .flex-layout .first,
             .second,
             .third,
@@ -38,25 +39,29 @@
             .row1 p.title,
             .row2 p.title {
                 margin-bottom: 5px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
             }
 
             p.title {
                 font-weight: bold;
                 font-size: 1.2rem;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             }
 
             p.laman {
                 font-style: italic;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             }
 
             .flex-layout p {
                 margin-bottom: 2px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             }
 
             .contact-div {
                 margin: 30px auto;
-             /* background-color: antiquewhite; */
+                /* background-color: antiquewhite; */
                 justify-content: center;
                 align-items: center;
                 text-align: center;
@@ -67,10 +72,25 @@
 
 
         @media (min-width: 858px) {
+
+ 
+
+            .flex-layout .first,
+            .second,
+            .third,
+            .fourth,
+            .fifth,
+            .sixth {
+                width: 100%;
+                margin: 0;
+                padding: 8px;
+                /* background-color: aliceblue; */
+            }
+
             .flex-layout {
                 display: flex;
                 width: 100%;
-                margin: 70px 0;
+                margin: 40px 0;
                 /* background-color: aliceblue; */
             }
 
@@ -85,21 +105,44 @@
                 font-weight: bold;
                 font-size: 1.2rem;
                 color: black;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             }
 
             p.laman {
-                font-style: italic;
+                /* font-style: italic; */
+                margin: 30px 0;
                 color: gray;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             }
 
             .flex-layout p {
                 margin: 0;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 /* background-color: aliceblue; */
             }
 
             .contact-div {
                 margin: 0 auto;
                 /* background-color: aliceblue; */
+            }
+
+            .first p,
+            .second p,
+            .third p,
+            .fourth p,
+            .fifth p,
+            .sixth p {
+                margin-bottom: 15px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 30px;
+                /* background-color: aliceblue; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
 
         }
@@ -109,33 +152,43 @@
 
 <body>
     <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn" onclick="toggleScroll()">
-            <i class="fas fa-bars"></i>
-        </label>
         <label class="logo">G.</label>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn" onclick="toggleMenu()">
+          <span class="hamburger-icon"></span>
+        </label>
         <ul>
             <li><a href="index.html">WORKS</a></li>
             <li><a class="active" href="about.html">ABOUT</a></li>
-            <li><a href="resume.pdf" target="_blank">RESUME</a></li>
+          <li><a href="resume.pdf" target="_blank">RESUME</a></li>
+          <li id="footer" class="footer">
+            <label class="logo">G.</label>
+          </li>
         </ul>
-    </nav>
+      </nav>
+
+      
 
     <div class="container">
         <div class="flex-layout">
             <div class="first">
                 <p class="title">Software Design</p>
-                <p class="laman">I am passionate about building and designing software products for various devices, including mobile, tablets, and large screens. My specialty is designing products from ideation to launch.</p>
+                <p class="laman">I am passionate about building and designing software products for various devices,
+                    including mobile, tablets, and large screens. My specialty is designing products from ideation to
+                    launch.</p>
             </div>
 
             <div class="second">
                 <p class="title">UI & Visual Design</p>
-                <p class="laman">I am a skilled visual designer with an eye for graphics, typography, layout, and color. I enjoy building functional software and mobile products that incorporate modern aesthetics.</p>
+                <p class="laman">I am a skilled visual designer with an eye for graphics, typography, layout, and color.
+                    I enjoy building functional software and mobile products that incorporate modern aesthetics.</p>
             </div>
 
             <div class="third">
                 <p class="title">User Research</p>
-                <p class="laman">In my opinion, user research should be the most prioritized stage of the design process. I enjoy talking to consumers to gain a full understanding of their workflow and issues before even considering design.
+                <p class="laman">In my opinion, user research should be the most prioritized stage of the design
+                    process. I enjoy talking to consumers to gain a full understanding of their workflow and issues
+                    before even considering design.
                 </p>
             </div>
         </div>
@@ -143,17 +196,23 @@
         <div class="flex-layout">
             <div class="fourth">
                 <p class="title">Project Management</p>
-                <p class="laman">I believe project management is crucial because it helps every aspect of an organization operate more successfully and efficiently. When done properly, it enables leadership to plan and manage projects, ensuring that every goal is met on schedule and within budget.</p>
+                <p class="laman">I believe project management is crucial because it helps every aspect of an
+                    organization operate more successfully and efficiently. When done properly, it enables leadership to
+                    plan and manage projects, ensuring that every goal is met on schedule and within budget.</p>
             </div>
 
             <div class="fifth">
                 <p class="title">Prototyping</p>
-                <p class="laman">I am skilled in prototyping products throughout the entire design lifecycle. I enjoy creating wireframes and prototypes using Figma and Adobe Photoshop to visualize ideas. Additionally, I practice front-end web development to create visual representations of websites.</p>
+                <p class="laman">I am skilled in prototyping products throughout the entire design lifecycle. I enjoy
+                    creating wireframes and prototypes using Figma and Adobe Photoshop to visualize ideas. Additionally,
+                    I practice front-end web development to create visual representations of websites.</p>
             </div>
 
             <div class="sixth">
                 <p class="title">Cognitive Science</p>
-                <p class="laman">I strongly advocate for consumer psychology and the importance of understanding how people use and interact with products. I endorse the use of user behavior analysis as a component of interaction design strategy.</p>
+                <p class="laman">I strongly advocate for consumer psychology and the importance of understanding how
+                    people use and interact with products. I endorse the use of user behavior analysis as a component of
+                    interaction design strategy.</p>
             </div>
         </div>
 
@@ -226,18 +285,44 @@
 
 <!-- checkbtn -->
 <script>
+    //   function toggleScroll() {
+    //   var bodyElement = document.body;
+  
+    //   if (bodyElement.style.overflowY === "hidden") {
+    //     bodyElement.style.overflowY = "";
+    //   } else {
+    //     if (window.innerHeight < bodyElement.scrollHeight) {
+    //       bodyElement.style.overflowY = "hidden";
+    //     }
+    //   }
+    // }
+  
     function toggleScroll() {
-        var bodyElement = document.body;
-
-        if (bodyElement.style.overflowY === "hidden") {
-            bodyElement.style.overflowY = "";
-        } else {
-            if (window.innerHeight < bodyElement.scrollHeight) {
-                bodyElement.style.overflowY = "hidden";
-            }
-        }
+      var bodyElement = document.body;
+  
+      if (bodyElement.style.overflowY === "hidden") {
+        bodyElement.style.overflowY = "";
+      } else {
+        bodyElement.style.overflowY = "hidden";
+      }
     }
-</script>
+  
+    function toggleMenu() {
+      var checkBtn = document.querySelector('.checkbtn');
+      var hamburgerIcon = document.querySelector('.hamburger-icon');
+      var ulElement = document.querySelector('ul');
+      checkBtn.classList.toggle('close');
+      hamburgerIcon.classList.toggle('cross');
+  
+      if (checkBtn.classList.contains('close')) {
+        ulElement.style.pointerEvents = 'auto';
+        toggleScroll();
+      } else {
+        ulElement.style.pointerEvents = 'none';
+        toggleScroll();
+      }
+    }
+  </script>
 
 <!-- blur background -->
 <script>

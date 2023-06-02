@@ -18,25 +18,20 @@
 
 <body>
   <nav>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn" onclick="toggleScroll()">
-      <i class="fas fa-bars"></i>
-    </label>
     <label class="logo">G.</label>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn" onclick="toggleMenu()">
+      <span class="hamburger-icon"></span>
+    </label>
     <ul>
       <li><a class="active" href="#">WORKS</a></li>
       <li><a href="about.html">ABOUT</a></li>
       <li><a href="resume.pdf" target="_blank">RESUME</a></li>
+      <li id="footer" class="footer">
+        <label class="logo">G.</label>
+      </li>
     </ul>
   </nav>
-
-
-
-
-
-
-
-
 
 
 
@@ -50,24 +45,24 @@
 
       <div class="works">
         <div class="image-container">
-          <a href="productivity.html" onmouseover="changeImage(this, 'image/work1.png')"
-            onmouseout="changeImage(this, 'image/image1.png')">
-            <img src="image/image1.png" alt="" class="zoom-image">
+          <a href="productivity.html" onmouseover="changeImage(this, 'image/work2.png')"
+            onmouseout="changeImage(this, 'image/work1.png')">
+            <img src="image/work1.png" alt="" class="zoom-image">
           </a>
         </div>
         <div class="image-container">
-          <a href="productivity.html" onmouseover="changeImage(this, 'image/work2.png')"
-            onmouseout="changeImage(this, 'image/image2.png')">
-            <img src="image/image2.png" alt="" class="zoom-image">
+          <a href="productivity.html" onmouseover="changeImage(this, 'image/work22.png')"
+            onmouseout="changeImage(this, 'image/work11.png')">
+            <img src="image/work11.png" alt="" class="zoom-image">
           </a>
         </div>
       </div>
 
       <div class="workss">
         <div class="image-container">
-          <a href="productivity.html" onmouseover="changeImage(this, 'image/work3.png')"
-            onmouseout="changeImage(this, 'image/image3.png')">
-            <img src="image/image3.png" alt="" class="zoom-image">
+          <a href="productivity.html" onmouseover="changeImage(this, 'image/work222.png')"
+            onmouseout="changeImage(this, 'image/work111.png')">
+            <img src="image/work111.png" alt="" class="zoom-image">
           </a>
         </div>
       </div>
@@ -147,17 +142,111 @@
 
 <!-- checkbtn -->
 <script>
-  function toggleScroll() {
-    var bodyElement = document.body;
+  //   function toggleScroll() {
+  //   var bodyElement = document.body;
 
-    if (bodyElement.style.overflowY === "hidden") {
-      bodyElement.style.overflowY = "";
-    } else {
-      if (window.innerHeight < bodyElement.scrollHeight) {
-        bodyElement.style.overflowY = "hidden";
-      }
-    }
+  //   if (bodyElement.style.overflowY === "hidden") {
+  //     bodyElement.style.overflowY = "";
+  //   } else {
+  //     if (window.innerHeight < bodyElement.scrollHeight) {
+  //       bodyElement.style.overflowY = "hidden";
+  //     }
+  //   }
+  // }
+
+  function toggleScroll() {
+  var bodyElement = document.body;
+
+  if (bodyElement.style.overflowY === "hidden") {
+    bodyElement.style.overflowY = "";
+  } else {
+    bodyElement.style.overflowY = "hidden";
   }
+}
+
+function toggleMenu() {
+  var checkBtn = document.querySelector('.checkbtn');
+  var hamburgerIcon = document.querySelector('.hamburger-icon');
+  var ulElement = document.querySelector('ul');
+  checkBtn.classList.toggle('close');
+  hamburgerIcon.classList.toggle('cross');
+
+  if (checkBtn.classList.contains('close')) {
+    toggleScroll();
+  } else {
+    toggleScroll();
+  }
+}
+
+function closeMenuOnResize() {
+  var checkBtn = document.querySelector('.checkbtn');
+  var ulElement = document.querySelector('ul');
+
+  if (window.innerWidth > 820 && checkBtn.classList.contains('close')) {
+    checkBtn.classList.remove('close');
+    var hamburgerIcon = document.querySelector('.hamburger-icon');
+    hamburgerIcon.classList.remove('cross');
+    toggleScroll();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var ulElement = document.querySelector('ul');
+  ulElement.addEventListener('click', function(e) {
+    if (e.target.tagName === 'A') {
+      toggleMenu();
+    }
+  });
+});
+
+window.addEventListener('resize', closeMenuOnResize);
+function toggleScroll() {
+  var bodyElement = document.body;
+
+  if (bodyElement.style.overflowY === "hidden") {
+    bodyElement.style.overflowY = "";
+  } else {
+    bodyElement.style.overflowY = "hidden";
+  }
+}
+
+function toggleMenu() {
+  var checkBtn = document.querySelector('.checkbtn');
+  var hamburgerIcon = document.querySelector('.hamburger-icon');
+  var ulElement = document.querySelector('ul');
+  checkBtn.classList.toggle('close');
+  hamburgerIcon.classList.toggle('cross');
+
+  if (checkBtn.classList.contains('close')) {
+    toggleScroll();
+  } else {
+    toggleScroll();
+  }
+}
+
+function closeMenuOnResize() {
+  var checkBtn = document.querySelector('.checkbtn');
+  var ulElement = document.querySelector('ul');
+
+  if (window.innerWidth > 820 && checkBtn.classList.contains('close')) {
+    checkBtn.classList.remove('close');
+    var hamburgerIcon = document.querySelector('.hamburger-icon');
+    hamburgerIcon.classList.remove('cross');
+    toggleScroll();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var ulElement = document.querySelector('ul');
+  ulElement.addEventListener('click', function(e) {
+    if (e.target.tagName === 'A') {
+      toggleMenu();
+    }
+  });
+});
+
+window.addEventListener('resize', closeMenuOnResize);
+
 </script>
 
 <!-- blur background -->
